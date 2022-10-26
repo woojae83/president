@@ -1,0 +1,426 @@
+body {
+    font-family: 'TmoneyRoundWindRegular';
+    background-color: #ffffff;
+}
+
+@font-face {
+    font-family: 'TmoneyRoundWindRegular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+element.style{
+	width:65%;
+	margin:0 auto;
+}
+
+.file-upload {
+    margin: 0 auto;
+    padding: 5% 5%;
+
+}
+
+.file-upload-content {
+    display: none;
+    text-align: center;
+}
+
+.file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+
+
+.image-upload-wrap {
+    margin-top: 20px;
+    position: relative;
+	object-fit:contain;
+	border-radius:10px;
+	border:dashed 1.5px #35465d;
+	background-color:#ffffff;
+	width:65%;
+	margin:0 auto;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+    background-color: rgba(63, 66, 74, 0.14);
+    border: 1.5px dashed #ffffff;
+}
+
+.image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+}
+
+.drag-text {
+    text-align: center;
+}
+
+
+.file-upload-image {
+    max-height: 60%;
+    max-width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+
+.remove-image {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: #cd4535;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #b02818;
+    transition: all 0.2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.remove-image:hover {
+    background: #c13b2a;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.remove-image:active {
+    border: 0;
+    transition: all 0.2s ease;
+}
+
+.nav-distance {
+    padding: 2.1% 7.7%;
+}
+
+.navbar-light .navbar-brand {
+    line-height: 1.68;
+    text-align: left;
+    color: #35465d;
+}
+
+.bg-light {
+	background-color: #ffffff;
+}
+
+.navbar-light .navbar-toggler {
+	border-color: #ffffff;
+}
+.section {
+	margin-top:5%px;
+	text-align:center;
+}
+.title{
+	line-height:1.67;
+	text-align:center;
+	color:#35465d;
+	
+}
+
+.subtitle{
+
+	line-height:1.53;
+	text-align:center;
+	color:#35465d;
+}
+
+@media screen and (max-width:600px) {
+	html {
+		font-size:10px;
+	}
+	.navbar-brand {
+		font-size: 2rem;
+	}
+}
+
+.youtube-link {
+	font-size:1rem;
+	line-height:1.71;
+	text-align:center;
+	color:#f73737;
+	margin-right:5%;
+	
+}
+
+.upload {
+	width:20%;
+}
+
+.upload-text {
+	width:80%;
+	font-weight:100;
+	text-transform:uppercase;
+	font-size:1.5rem;
+	line-height:1.53;
+	text-align:center;
+	color:#35465d;
+	margin:0 auto;
+	padding:0;
+		
+}
+
+.upload-text:hover {
+	color:#ffffff;
+}
+
+.upload {
+	color:#35465d;
+}
+
+.top_img {
+	display:inline-block;
+	width:20%;
+    align-items:center ;
+	margin:0 auto;
+	padding:0;
+	
+}
+
+.point_text {
+	color:red;
+}
+
+.subtext {
+	line-height:1.67;
+	text-align:center;
+	color:#35465d;
+	font-size:1.2rem;
+}
+
+@keyframes spin {
+	0% {transform:rotate(0deg); }
+	100% {transform:rotate(360deg); }
+}
+
+.loader,.file-upload-loader {
+	border: 16px solid #f3f3f3;
+	border-top:16px solid #3498db;
+	border-radius:50%;
+	width:5rem;
+	height:5rem;
+	animation:spin 2s linear infinite;
+	position:relatve;
+	display:block;
+	margin:0 auto;
+	z-index:1;
+	
+}
+
+.file-upload-loader {
+
+	display:hidden;
+	
+}
+
+.file-upload-text {
+	line-height:1.67;
+	text-align:center;
+	color:#35465d;
+	font-size:1.2rem;
+}
+
+.percent-text {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.animal-label {
+    width: 20%;
+    text-align: left;
+    height: 2rem;
+}
+
+#label-container > div {
+	display:flex;
+}
+
+.bar-container {
+  height: 2.7rem;
+}
+
+.마약-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(89, 89, 89, 1);
+}
+
+.마약-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(89, 89, 89, 0.2);
+}
+
+.마약-title {
+	color: rgba(89, 89, 89, 1);
+}
+
+.살인-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.살인-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+.살인-title {
+	color:rgba(255, 0, 0, 1);
+}
+
+.방화-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(255, 102, 0, 1);
+}
+
+.방화-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(255, 102, 0, 0.2);
+}
+.방화-title {
+	color: rgba(255, 102, 0, 1);
+}
+
+.모범시민-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(117, 204, 84, 1);
+}
+
+.모범시민-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(117, 204, 84, 0.2);
+}
+.모범시민-title {
+	color:rgba(117, 204, 84, 1);
+}
+
+.사기-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(235, 158, 5, 1);
+}
+
+.사기-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(235, 158, 5, 0.2);
+}
+.사기-title {
+	color:rgba(235, 158, 5, 1);
+}
+
+.성범죄-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(107, 0, 105, 1);
+}
+
+.성범죄-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(107, 0, 105, 0.2);
+}
+.성범죄-title {
+	color:rgba(107, 0, 105, 1);
+}
+
+.jocoding_youtube {
+	color:red !important;
+}
+
+
+.result-message {
+	font-size:2rem;
+	font-weight:bold;
+}
+
+.result-Explain {
+	font-size:1.3rem;
+}
+
+.at-share-btn-elements {
+	margin-bottom:5%;
+}
+
+a:hover {
+	cursor:pointer;
+}
+
+.ad-banner {
+	width:320px;
+	margin: 0 auto;
+}
+
+#disqus_thread {
+	width:50%;
+	margin:0 auto;
+}
+@media screen and (max-width:600px) {
+	#disqus_thread {
+		width:80%;
+		margin:0 auto;
+	} 
+}
+
+.title_hidden {
+	display:none;
+}
